@@ -1,4 +1,6 @@
 package src;
+
+import src.Products.*;
 import java.util.*;
 import java.io.*;
 
@@ -241,11 +243,11 @@ public class Player extends Renderable {
     }
 
     // Menyiram land dengan wadah air yang dimiliki
-    public void Grow(Cell map[10][11]) {
+    public void Grow(Cell [][] map) {
         if (!map[y][x].isHasGrass()) {
-            if (WaterContainer>=10) {
+            if (WaterContainer.intValue()>=10) {
                 map[y][x].setHasGrass(true);
-                WaterContainer-=10;
+                WaterContainer.setValue(WaterContainer.intValue()-10);
                 System.out.println("Grass sudah ditumbuhkan");
             } else {
                 System.out.println("Water tidak cukup");

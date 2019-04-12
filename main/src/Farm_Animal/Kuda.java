@@ -1,7 +1,11 @@
 package src.Farm_Animal;
 
 import src.FarmAnimal;
-import src.Products.Product;
+import src.Product;
+
+import src.Products.FarmProducts.Eggs.*;
+import src.Products.FarmProducts.Meats.*;
+import src.Products.FarmProducts.Milks.*;
 
 public class Kuda extends FarmAnimal implements MilkProducingAnimal, MeatProducingAnimal {
     public Kuda(int _x, int _y){

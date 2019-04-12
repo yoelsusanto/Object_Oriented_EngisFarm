@@ -1,10 +1,14 @@
 package src.Farm_Animal;
 
 import src.FarmAnimal;
-import src.Products.Product;
+import src.Product;
+
+import src.Products.FarmProducts.Eggs.*;
+import src.Products.FarmProducts.Meats.*;
+import src.Products.FarmProducts.Milks.*;
 
 public class Ayam extends FarmAnimal implements EggProducingAnimal, MeatProducingAnimal {
-    public Angsa(int _x, int _y){
+    public Ayam(int _x, int _y){
         super(_x,_y, "Petook", 2);
         renderChar = 'c';
         hungry =6;
