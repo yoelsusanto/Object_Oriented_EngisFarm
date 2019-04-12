@@ -4,6 +4,6 @@ import src.Products.FarmProd.Meat;
 
 public class GooseMeat extends Meat {
     public GooseMeat(){
-        super("Duck Meat", 6, 20);
+        super("Goose Meat", 6, 20);
     }
 }

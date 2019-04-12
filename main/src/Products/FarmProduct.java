@@ -5,7 +5,7 @@ import src.Product;
 public class FarmProduct extends Product{
     //Atribut
    public FarmProduct(String _name, int _type_product, int _price){
-      super(_name, _type_product, _price);
+       super(_name, _type_product, _price);
    }
         //Tipe 1 + 4 = ChickenRolade
         //Tipe 1 + 5 = NasiHainan
