@@ -1,8 +1,8 @@
 package src;
 
-import src.Product;
+import src.Products.*;
 import src.Products.SideProducts.*;
-import src.Products.FarmProduct;
+import src.Products.FarmProducts.*;
 
 import java.lang.*;
 

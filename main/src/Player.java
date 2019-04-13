@@ -1,6 +1,8 @@
 package src;
 
 import src.Products.*;
+import src.Products.FarmProducts.Meats.*;
+import src.Products.SideProducts.*;
 import java.util.*;
 import java.io.*;
 
@@ -183,7 +185,7 @@ public class Player extends Renderable {
     }
 
     // Menyembelih hewan, bila animalnya termasuk yang meatProducer
-    public void Kill(List<FarmAnimal> listOfAnimal, Cell map[10][11]) {
+    public void Kill(List<FarmAnimal> listOfAnimal, Cell map [][]) {
         int targetX, targetY, typeCell, i1, i2;
         targetX = x;
         targetY = y;

@@ -1,6 +1,6 @@
 package src.Products.FarmProducts.Eggs;
 
-import src.Products.FarmProd.Egg;
+import src.Products.FarmProducts.Egg;
 
 public class DuckEgg extends Egg {
     public DuckEgg(){

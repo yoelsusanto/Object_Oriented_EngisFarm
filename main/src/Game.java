@@ -55,8 +55,8 @@ public class Game {
         //place angsa
         while (!berhasil) {
 
-            x = (int) ((Math.random()*100%11);
-            y = (int) ((Math.random()*100%10);
+            x = (int) (Math.random()*100%11);
+            y = (int) (Math.random()*100%10);
 
             typeCell = map[y][x].getTypeCell();
             // cout << typeCell << endl;
@@ -74,8 +74,8 @@ public class Game {
         //place ayam
         while (!berhasil) {
 
-            x = (int) ((Math.random()*100%11);
-            y = (int) ((Math.random()*100%10);
+            x = (int) (Math.random()*100%11);
+            y = (int) (Math.random()*100%10);
 
             typeCell = map[y][x].getTypeCell();
             // cout << typeCell << endl;
@@ -93,8 +93,8 @@ public class Game {
         //place bebek
         while (!berhasil) {
 
-            x = (int) ((Math.random()*100%11);
-            y = (int) ((Math.random()*100%10);
+            x = (int) (Math.random()*100%11);
+            y = (int) (Math.random()*100%10);
 
             typeCell = map[y][x].getTypeCell();
             // cout << typeCell << endl;
@@ -112,8 +112,8 @@ public class Game {
         //place kambing
         while (!berhasil) {
 
-            x = (int) ((Math.random()*100%11);
-            y = (int) ((Math.random()*100%10);
+            x = (int) (Math.random()*100%11);
+            y = (int) (Math.random()*100%10);
 
             typeCell = map[y][x].getTypeCell();
             // cout << typeCell << endl;
@@ -131,8 +131,8 @@ public class Game {
         //place kuda
         while (!berhasil) {
 
-            x = (int) ((Math.random()*100%11);
-            y = (int) ((Math.random()*100%10);
+            x = (int) (Math.random()*100%11);
+            y = (int) (Math.random()*100%10);
 
             typeCell = map[y][x].getTypeCell();
             // cout << typeCell << endl;
@@ -150,8 +150,8 @@ public class Game {
         //place sapi
         while (!berhasil) {
 
-            x = (int) ((Math.random()*100%11);
-            y = (int) ((Math.random()*100%10);
+            x = (int) (Math.random()*100%11);
+            y = (int) (Math.random()*100%10);
 
             typeCell = map[y][x].getTypeCell();
             // cout << typeCell << endl;
@@ -173,8 +173,8 @@ public class Game {
 
         //place manusia
         while (!berhasil) {
-            x = (int) ((Math.random()*100%11);
-            y = (int) ((Math.random()*100%10);
+            x = (int) (Math.random()*100%11);
+            y = (int) (Math.random()*100%10);
 
             typeCell = map[y][x].getTypeCell();
             // cout << typeCell << endl;
@@ -225,7 +225,7 @@ public class Game {
     }
 
     public void playerKill() {
-        P.Kill(&listOfAnimal, map);
+        P.Kill(listOfAnimal, map);
     }
 
     public void playerInteract() {

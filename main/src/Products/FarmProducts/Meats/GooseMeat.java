@@ -1,6 +1,6 @@
 package src.Products.FarmProducts.Meats;
 
-import src.Products.FarmProd.Meat;
+import src.Products.FarmProducts.Meat;
 
 public class GooseMeat extends Meat {
     public GooseMeat(){
