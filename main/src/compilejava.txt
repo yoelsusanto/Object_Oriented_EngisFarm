@@ -1,0 +1,1 @@
+javac *.java Cells/*.java Cells/Facilities/*.java Cells/Lands/*.java Farm_Animal/*.java Products/*.java Products/FarmProducts/*.java Products/FarmProducts/Eggs/*.java Products/FarmProducts/Meats/*.java Products/FarmProducts/Milks/*.java Products/SideProducts/*.java
