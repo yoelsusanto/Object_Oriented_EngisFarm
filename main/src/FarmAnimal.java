@@ -68,7 +68,7 @@ public abstract class FarmAnimal extends Renderable {
         this.y = _y;
     }
 
-    public boolean isPointValid(int _x, int _y){
+    public boolean isPointValid(int _y, int _x){
         return (_y >= 0 && _y < 10 && _x >= 0 && _x < 11);
     }
 
@@ -114,35 +114,43 @@ public abstract class FarmAnimal extends Renderable {
             while (!success && tries <= 4) {
                 switch (val) {
                     case 1:     // Up
-                        if (isPointValid(y-1,x) && !map[y-1][x].isOccupied() && isAreaValid(getTypeAnimal(),map[y-1][x].getTypeCell())){
-                        map[y][x].setOccupied(false);
-                        y--;
-                        map[y][x].setOccupied(true);
-                        success = true;
+                        if (isPointValid(y-1,x)){
+                            if (!map[y-1][x].isOccupied() && isAreaValid(getTypeAnimal(),map[y-1][x].getTypeCell())) {
+                                map[y][x].setOccupied(false);
+                                y--;
+                                map[y][x].setOccupied(true);
+                                success = true;
+                            }
                     }
                     break;
                     case 2:     // Down
-                        if (isPointValid(y+1,x) && !map[y+1][x].isOccupied() && isAreaValid(getTypeAnimal(),map[y+1][x].getTypeCell())){
-                        map[y][x].setOccupied(false);
-                        y++;
-                        map[y][x].setOccupied(true);
-                        success = true;
+                        if (isPointValid(y+1,x)){
+                            if (!map[y+1][x].isOccupied() && isAreaValid(getTypeAnimal(),map[y+1][x].getTypeCell())) {
+                                map[y][x].setOccupied(false);
+                                y++;
+                                map[y][x].setOccupied(true);
+                                success = true;
+                            }
                     }
                     break;
                     case 3:     // Left
-                        if (isPointValid(y,x-1) && !map[y][x-1].isOccupied() && isAreaValid(getTypeAnimal(),map[y][x-1].getTypeCell())){
-                        map[y][x].setOccupied(false);
-                        x--;
-                        map[y][x].setOccupied(true);
-                        success = true;
+                        if (isPointValid(y,x-1)){
+                            if (!map[y][x-1].isOccupied() && isAreaValid(getTypeAnimal(),map[y][x-1].getTypeCell())) {
+                                map[y][x].setOccupied(false);
+                                x--;
+                                map[y][x].setOccupied(true);
+                                success = true;
+                            }
                     }
                     break;
                     case 4:     // Right
-                        if (isPointValid(y,x+1) && !map[y][x+1].isOccupied() && isAreaValid(getTypeAnimal(),map[y][x+1].getTypeCell())){
-                        map[y][x].setOccupied(false);
-                        x++;
-                        map[y][x].setOccupied(true);
-                        success = true;
+                        if (isPointValid(y,x+1)){
+                            if (!map[y][x+1].isOccupied() && isAreaValid(getTypeAnimal(),map[y][x+1].getTypeCell())) {
+                                map[y][x].setOccupied(false);
+                                x++;
+                                map[y][x].setOccupied(true);
+                                success = true;
+                            }
                     }
                     break;
                 }

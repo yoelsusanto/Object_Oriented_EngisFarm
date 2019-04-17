@@ -2,8 +2,8 @@ package src;
 
 public class Cell extends Renderable{
     protected final int typeCell;
-    boolean occupied;
-    boolean hasGrass;
+    protected boolean occupied;
+    protected boolean hasGrass;
 
     public Cell() {
         typeCell=0;

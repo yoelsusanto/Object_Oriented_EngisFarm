@@ -1,10 +1,10 @@
 package src.Cells.Lands;
 
-import src.*;
+import src.Cells.Land;
 
-public class Coop extends Cell{
+public class Coop extends Land {
     public Coop (boolean occupied){
-      super('o',5,occupied);
-      //this.occupied = occupied;
+      super('o',5);
+      this.occupied = occupied;
     }
 }

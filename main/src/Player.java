@@ -1,10 +1,7 @@
 package src;
 
-import src.Products.*;
 import src.Products.FarmProducts.Meats.*;
-import src.Products.SideProducts.*;
 import java.util.*;
-import java.io.*;
 
 import org.apache.commons.lang3.mutable.MutableInt;
 import src.Cells.Facilities.*;
@@ -24,6 +21,9 @@ public class Player extends Renderable {
     }
 
     public Player(int x, int y) { // ctor player
+        Bag = new List<Product>();
+        money = new MutableInt(0);
+        WaterContainer = new MutableInt(100);
         this.x = x;
         this.y = y;
         renderChar = '^';
@@ -93,9 +93,10 @@ public class Player extends Renderable {
         if (idxHewan!=-1) {
             listOfAnimal.get(idxHewan).sound();
         } else {
+            MainFrame.getInstance().setOutputResLabel("Tidak ada animal didepan mata");
 
-            System.out.println("Tidak ada animal didepan mata");
-            System.out.println(targetX + " " + targetY);
+//            System.out.println("Tidak ada animal didepan mata");
+//            System.out.println(targetX + " " + targetY);
         }
     }
 
@@ -143,6 +144,7 @@ public class Player extends Renderable {
                 } else if (typeCell==3) {
                     Well pW = (Well) (map[targetY][targetX]);
                     pW.getWater(WaterContainer);
+
                     System.out.println("Berhasil mendapatkan air!");
                 }
             } else { //land, berarti interaksi dengan binatang
@@ -239,8 +241,7 @@ public class Player extends Renderable {
             System.out.println("Berhasil memasukkan product");
 
         } else {
-            System.out.println("Tidak ada animal didepan mata");
-            // System.out.println(targetX + " " + targetY);
+            MainFrame.getInstance().setOutputResLabel("Tidak ada animal didepan mata");
         }
     }
 

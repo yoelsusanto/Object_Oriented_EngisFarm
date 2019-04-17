@@ -1,11 +1,11 @@
 //package src;
 package src.Cells.Lands;
 
-import src.*;
+import src.Cells.Land;
 
-public class Grassland extends Cell{
+public class Grassland extends Land {
     public Grassland(boolean occupied){
-      super('-',6,occupied);
-      //this.occupied = occupied;
+      super('-',6);
+      this.occupied = occupied;
     }
 }

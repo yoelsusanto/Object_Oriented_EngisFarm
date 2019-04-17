@@ -9,3 +9,4 @@ public class Land extends Cell {
         setHasGrass(true);
     }
 }
+
