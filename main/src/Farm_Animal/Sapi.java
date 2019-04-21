@@ -9,7 +9,7 @@ import src.Products.FarmProducts.Milks.*;
 
 public class Sapi extends FarmAnimal implements EggProducingAnimal, MeatProducingAnimal {
     public Sapi(int _x, int _y){
-        super(_x,_y, "Mooo", 5);
+        super(_x,_y, "Mooo", 6);
         renderChar = 's';
         hungry = 10;
         timeLeft = hungry + 5;
