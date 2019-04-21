@@ -36,6 +36,7 @@ public class Truck extends Facility {
                 int idx = 0;
                 while (idx < bag.getNeff()) {
                     moneytemp += bag.get(idx).getPrice();
+                    idx++;
                 }
                 gameMoney.setValue(moneytemp);
             } else {

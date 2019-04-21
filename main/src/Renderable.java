@@ -15,6 +15,4 @@ public class Renderable {
     public char getRender() {
         return renderChar;
     }
-
-
 }

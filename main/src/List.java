@@ -4,7 +4,6 @@ import java.util.*;
 
 public class List<T> {
     protected Vector<T> data;
-
     protected int neff;
 
     public List() {
